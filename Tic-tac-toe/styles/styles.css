@@ -1,0 +1,29 @@
+table, td, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 400px;
+    height: 120px;
+    text-align: center;
+}
+
+    tr:nth-child(even) td:nth-child(even),
+    tr:nth-child(odd) td:nth-child(odd) {
+        background-color: #a18262;
+    }
+
+    tr:nth-child(odd) td:nth-child(even),
+    tr:nth-child(even) td:nth-child(odd) {
+        background-color: #ffd093;
+    }
+
+td {
+    cursor: pointer;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.ganador {
+    margin-top: 20px;
+    font-size: 20px;
+    color: green;
+}

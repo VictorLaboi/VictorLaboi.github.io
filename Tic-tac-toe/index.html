@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/functions.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+    
+    <title>Tic Tac Toe</title>
+    <style>
+    </style>
+</head>
+<body>
+
+    <h1>Juego Tic Tac Toe</h1>
+
+    <table id="tablero">
+        <tr>
+            <td onclick="hacerMovimiento(this, 0)"></td>
+            <td onclick="hacerMovimiento(this, 1)"></td>
+            <td onclick="hacerMovimiento(this, 2)"></td>
+        </tr>
+        <tr>
+            <td onclick="hacerMovimiento(this, 3)"></td>
+            <td onclick="hacerMovimiento(this, 4)"></td>
+            <td onclick="hacerMovimiento(this, 5)"></td>
+        </tr>
+        <tr>
+            <td onclick="hacerMovimiento(this, 6)"></td>
+            <td onclick="hacerMovimiento(this, 7)"></td>
+            <td onclick="hacerMovimiento(this, 8)"></td>
+        </tr>
+    </table>
+
+    <div class="ganador" id="resultado"></div>
+    <button onclick="limpiecito()">Reiniciar Juego</button>
+
+</body>
+</html>
